@@ -4,7 +4,9 @@ def oxford_comma(array)
     if i==0
       new_string<<i
     else
-      new_string<<" and #{i}"
+      new_string<<", #{i}"
+    elsif i==array.last
+      new_string<<", and #{i}"
     end
   end
   new_string
